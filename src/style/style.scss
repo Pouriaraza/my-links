@@ -15,8 +15,7 @@ body{
 }
 
 .social-links{
-    width: 40%;
-    height: 100rem;
+    width: 40rem;
     margin: auto auto;
     border-radius: .7rem;
     .items{
@@ -50,5 +49,14 @@ body{
     }
     h1{
         text-align: center;
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    .social-links{
+        width: 90%;
     }
 }
