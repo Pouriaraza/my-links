@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'FredokaOne';
+    src: url(../Fonts/FredokaOne-Regular.ttf);
+}
+@font-face {
+    font-family: 'Yellowtail';
+    src: url(../Fonts/Yellowtail-Regular.ttf);
+}
+
+
+body{
+    background-color: black;
+    font-family: FredokaOne;
+    color: white;
+}
+
+.social-links{
+    width: 40rem;
+    height: 100rem;
+    margin: auto auto;
+    border-radius: .7rem;
+    .items{
+        width: 100%;
+        border-radius: .7rem;
+        display: flex;
+        align-items: center;
+        background-color: rgb(40, 40, 40);
+        padding: 1rem;
+        a{
+            display: contents;
+            color: white;
+        }
+        .info{
+            margin: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 1.4rem; 
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+            span {
+                margin-right: 1rem;
+            }
+        }
+        img{
+            width: 8rem;
+            border-radius: 100%;
+        }
+    }
+    h1{
+        text-align: center;
+    }
+}

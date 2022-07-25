@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './style/style.scss';
+import instagram from './images/instagram.jpg';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className='social-links'>
+        <h1>u can follow me 🫠</h1>
+        <div className='items instagram'>
+       <a href=''>
+       <img src={instagram} />
+          <div className='info'><p>
+            pouria_raza</p>
+            <div className='followers'>  <span>338 followers</span> <span>585 following</span></div>
+
+          </div>
+       </a>
+        </div>
+      </section>
     </div>
   );
 }
