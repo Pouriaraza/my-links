@@ -65,7 +65,7 @@ const socialLinks = () => {
       </div>
 
       <div className='items nashenas'>
-        <a href='https://www.linkedin.com/in/pouria-razavian-3529211a1'>
+        <a href='https://t.me/BiChatBot?start=sc-558137-67OPR8x'>
           <img src={nashenas} />
           <div className='info'>
             <User user="nashenas" />
