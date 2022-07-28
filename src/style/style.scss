@@ -1,40 +1,54 @@
 @font-face {
-    font-family: 'FredokaOne';
+    font-family: "FredokaOne";
     src: url(../Fonts/FredokaOne-Regular.ttf);
 }
 @font-face {
-    font-family: 'Yellowtail';
+    font-family: "Yellowtail";
     src: url(../Fonts/Yellowtail-Regular.ttf);
 }
 
-
-body{
+body {
     background-color: black;
     font-family: FredokaOne;
     color: white;
 }
 
-.social-links{
+.social-links {
     width: 40rem;
     margin: auto auto;
-    border-radius: .7rem;
-    .items{
-        width: 100%;
-        border-radius: .7rem;
+    border-radius: 0.7rem;
+    .items {
+        border-radius: 0.7rem;
         display: flex;
         align-items: center;
         background-color: rgb(40, 40, 40);
         padding: 1rem;
-        a{
-            display: contents;
+        a {
+            display: flex;
             color: white;
+            width: 100%;
+            align-items: center;
+            position: relative;
+            text-decoration: none;
+            &::after{
+                content: " ";
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                background: url(../images/Instagram_Glyph_Gradient.png) center no-repeat;
+                right: 2.5rem;
+                bottom: 50%;
+                transform: translate(50%,50%);
+                background-size: contain;
+            }
         }
-        .info{
+        .info {
             margin: 0 2rem;
             display: flex;
             flex-direction: column;
-            p{
-                font-size: 1.4rem; 
+            p {
+                font-size: 1.4rem;
                 margin: 0;
                 margin-bottom: 1rem;
             }
@@ -42,21 +56,41 @@ body{
                 margin-right: 1rem;
             }
         }
-        img{
+        img {
             width: 8rem;
             border-radius: 100%;
         }
     }
-    h1{
+    h1 {
         text-align: center;
     }
 }
 
-
-
-
-@media (max-width:768px) {
-    .social-links{
+@media (max-width: 768px) {
+    .social-links {
         width: 90%;
+        .items{
+            padding: 1rem 5px;
+            a{
+                &::after{
+                    width: 30px;
+                    height: 30px;
+                    right: 1.5rem;
+                    bottom: 70%;
+                }
+                .info{
+                    margin: 0 10px;
+                    .userName{
+                        font-size: 18px;
+                    }
+                    .followers{
+                        font-size: 11px;
+                    }
+                }
+                img{
+                    width: 4rem;
+                }
+            }
+        }
     }
 }
