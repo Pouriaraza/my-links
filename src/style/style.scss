@@ -12,6 +12,34 @@ body {
     font-family: FredokaOne;
     color: white;
 }
+.instagram{
+    background-image: linear-gradient(to right, rgba(255, 59, 30, 0.231372549), rgb(182 4 235 / 21%));
+    a::after {
+        background: url(../images/Instagram_Glyph_Gradient.png) center no-repeat;
+    }
+} 
+.telegram {
+    background-image: linear-gradient(to right, rgb(255 255 255 / 13%), rgb(38 162 219 / 13%));
+    a::after {
+        background: url(../images/Telegram_logo.png) center no-repeat;
+    }
+}
+.spotify {
+    background-image: linear-gradient(to right, rgb(42 57 64 / 51%), rgb(45 189 89 / 16%));
+    a::after {
+        background: url(../images/spotify-logo.png) center no-repeat;
+    }
+}
+.Linkedin {
+    background-image: linear-gradient(to right, rgb(255 255 255 / 13%), rgb(38 162 219 / 13%));
+    a::after {
+        background: url(../images/linkedin-logo.png) center no-repeat;
+    }
+}
+.nashenas a::after{
+    background: url(../images/nashenas.jpg)center no-repeat;
+    border-radius: 100%;
+}
 
 .social-links {
     width: 40rem;
@@ -21,8 +49,9 @@ body {
         border-radius: 0.7rem;
         display: flex;
         align-items: center;
-        background-color: rgb(40, 40, 40);
+        // background-color: rgb(40, 40, 40);
         padding: 1rem;
+        margin-top: 1rem;
         a {
             display: flex;
             color: white;
@@ -30,16 +59,15 @@ body {
             align-items: center;
             position: relative;
             text-decoration: none;
-            &::after{
+            &::after {
                 content: " ";
                 position: absolute;
                 width: 50px;
                 height: 50px;
                 display: inline-block;
-                background: url(../images/Instagram_Glyph_Gradient.png) center no-repeat;
                 right: 2.5rem;
                 bottom: 50%;
-                transform: translate(50%,50%);
+                transform: translate(50%, 50%);
                 background-size: contain;
             }
         }
@@ -58,6 +86,8 @@ body {
         }
         img {
             width: 8rem;
+            height: 8rem;
+            object-fit: cover;
             border-radius: 100%;
         }
     }
@@ -69,26 +99,27 @@ body {
 @media (max-width: 768px) {
     .social-links {
         width: 90%;
-        .items{
+        .items {
             padding: 1rem 5px;
-            a{
-                &::after{
+            a {
+                &::after {
                     width: 30px;
                     height: 30px;
                     right: 1.5rem;
                     bottom: 70%;
                 }
-                .info{
+                .info {
                     margin: 0 10px;
-                    .userName{
+                    .userName {
                         font-size: 18px;
                     }
-                    .followers{
+                    .followers {
                         font-size: 11px;
                     }
                 }
-                img{
+                img {
                     width: 4rem;
+                    height: 4rem;
                 }
             }
         }
