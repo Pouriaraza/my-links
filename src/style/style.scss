@@ -9,7 +9,6 @@
 
 body {
     background-color: black;
-    font-family: FredokaOne;
     color: white;
 }
 .instagram{
@@ -45,6 +44,9 @@ body {
     width: 40rem;
     margin: auto auto;
     border-radius: 0.7rem;
+    h1{
+        font-family: FredokaOne;
+    }
     .items {
         border-radius: 0.7rem;
         display: flex;
@@ -97,6 +99,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .wave{
+        height: 5rem !important;
+    }
     .social-links {
         width: 90%;
         .items {
