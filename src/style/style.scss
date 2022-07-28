@@ -11,12 +11,12 @@ body {
     background-color: black;
     color: white;
 }
-.instagram{
+.instagram {
     background-image: linear-gradient(to right, rgba(255, 59, 30, 0.231372549), rgb(182 4 235 / 21%));
     a::after {
         background: url(../images/Instagram_Glyph_Gradient.png) center no-repeat;
     }
-} 
+}
 .telegram {
     background-image: linear-gradient(to right, rgb(255 255 255 / 13%), rgb(38 162 219 / 13%));
     a::after {
@@ -35,8 +35,8 @@ body {
         background: url(../images/linkedin-logo.png) center no-repeat;
     }
 }
-.nashenas a::after{
-    background: url(../images/nashenas.jpg)center no-repeat;
+.nashenas a::after {
+    background: url(../images/nashenas.jpg) center no-repeat;
     border-radius: 100%;
 }
 
@@ -44,7 +44,7 @@ body {
     width: 40rem;
     margin: auto auto;
     border-radius: 0.7rem;
-    h1{
+    h1 {
         font-family: FredokaOne;
     }
     .items {
@@ -97,9 +97,16 @@ body {
         text-align: center;
     }
 }
-
+footer {
+    .by {
+        color: #fff;
+        text-align: center;
+        display: block;
+        margin: 20px;
+    }
+}
 @media (max-width: 768px) {
-    .wave{
+    .wave {
         height: 5rem !important;
     }
     .social-links {
@@ -130,9 +137,6 @@ body {
         }
     }
 }
-
-
-
 
 body {
     margin: auto;

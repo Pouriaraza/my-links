@@ -15,6 +15,9 @@ function App() {
      <div class="wave"></div>
   </div>
       <SocialLinks />
+      <footer>
+     <a href='https://www.linkedin.com/in/pouria-razavian-3529211a1' className='by'>by © Pouria Razavian</a>
+      </footer>
     </div>
   );
 }
