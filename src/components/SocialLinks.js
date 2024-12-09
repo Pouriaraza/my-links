@@ -1,10 +1,11 @@
 import instagram from '../images/instagram.jpg';
 import telegram from '../images/telegram-channel.JPG';
 import spotify from '../images/Spotify-profile.jpg';
-import Linkedin from '../images/Linkedin-profile.jpg';
+import website from '../images/website.JPG';
 import nashenas from '../images/nashenas.jpg';
 import React from "react";
 import User from './UserName-data';
+import '../style/custom-border.scss'
 // import logoInstagram from '../images/Instagram_Glyph_Gradient.jpg';
 
 const socialLinks = () => {
@@ -25,6 +26,18 @@ const socialLinks = () => {
         </a>
       </div>
 
+      {/* <article> */}
+      <div className='items website'>
+        <a href='https://pouriarraza.vercel.app'>
+          <img src={website} />
+          <div className='info'>
+            <User user="Portfolio" />
+            <span>Portfolio Website</span>
+
+          </div>
+        </a>
+      </div>
+      {/* </article> */}
       <div className='items telegram'>
         <a href='https://t.me/old_dreamss'>
           <img src={telegram} />
@@ -51,7 +64,7 @@ const socialLinks = () => {
           </div>
         </a>
       </div>
-
+      {/* 
       <div className='items Linkedin'>
         <a href='https://www.linkedin.com/in/pouria-razavian-3529211a1'>
           <img src={Linkedin} />
@@ -62,7 +75,7 @@ const socialLinks = () => {
 
           </div>
         </a>
-      </div>
+      </div> */}
 
       <div className='items nashenas'>
         <a href='https://t.me/BiChatBot?start=sc-558137-67OPR8x'>

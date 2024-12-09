@@ -2,6 +2,7 @@
     font-family: "FredokaOne";
     src: url(../Fonts/FredokaOne-Regular.ttf);
 }
+
 @font-face {
     font-family: "Yellowtail";
     src: url(../Fonts/Yellowtail-Regular.ttf);
@@ -11,30 +12,41 @@ body {
     background-color: black;
     color: white;
 }
+
 .instagram {
     background-image: linear-gradient(to right, rgba(255, 59, 30, 0.231372549), rgb(182 4 235 / 21%));
+
     a::after {
         background: url(../images/Instagram_Glyph_Gradient.png) center no-repeat;
     }
 }
+
 .telegram {
     background-image: linear-gradient(to right, rgb(255 255 255 / 13%), rgb(38 162 219 / 13%));
+
     a::after {
         background: url(../images/Telegram_logo.png) center no-repeat;
     }
 }
+
 .spotify {
     background-image: linear-gradient(to right, rgb(42 57 64 / 51%), rgb(45 189 89 / 16%));
+
     a::after {
         background: url(../images/spotify-logo.png) center no-repeat;
     }
 }
-.Linkedin {
+
+.Linkedin,
+.website {
     background-image: linear-gradient(to right, rgb(255 255 255 / 13%), rgb(38 162 219 / 13%));
+
     a::after {
-        background: url(../images/linkedin-logo.png) center no-repeat;
+        // background: url(../images/linkedin-logo.png) center no-repeat;
+        background: url(../images/website-icone.png) center no-repeat;
     }
 }
+
 .nashenas a::after {
     background: url(../images/nashenas.jpg) center no-repeat;
     border-radius: 100%;
@@ -44,9 +56,11 @@ body {
     width: 40rem;
     margin: auto auto;
     border-radius: 0.7rem;
+
     h1 {
         font-family: FredokaOne;
     }
+
     .items {
         border-radius: 0.7rem;
         display: flex;
@@ -54,6 +68,7 @@ body {
         // background-color: rgb(40, 40, 40);
         padding: 1rem;
         margin-top: 1rem;
+
         a {
             display: flex;
             color: white;
@@ -61,6 +76,7 @@ body {
             align-items: center;
             position: relative;
             text-decoration: none;
+
             &::after {
                 content: " ";
                 position: absolute;
@@ -73,19 +89,23 @@ body {
                 background-size: contain;
             }
         }
+
         .info {
             margin: 0 2rem;
             display: flex;
             flex-direction: column;
+
             p {
                 font-size: 1.4rem;
                 margin: 0;
                 margin-bottom: 1rem;
             }
+
             span {
                 margin-right: 1rem;
             }
         }
+
         img {
             width: 8rem;
             height: 8rem;
@@ -93,10 +113,12 @@ body {
             border-radius: 100%;
         }
     }
+
     h1 {
         text-align: center;
     }
 }
+
 footer {
     .by {
         color: #fff;
@@ -105,14 +127,18 @@ footer {
         margin: 20px;
     }
 }
+
 @media (max-width: 768px) {
     .wave {
         height: 5rem !important;
     }
+
     .social-links {
         width: 90%;
+
         .items {
             padding: 1rem 5px;
+
             a {
                 &::after {
                     width: 30px;
@@ -120,15 +146,19 @@ footer {
                     right: 1.5rem;
                     bottom: 70%;
                 }
+
                 .info {
                     margin: 0 10px;
+
                     .userName {
                         font-size: 18px;
                     }
+
                     .followers {
                         font-size: 11px;
                     }
                 }
+
                 img {
                     width: 4rem;
                     height: 4rem;
@@ -152,9 +182,11 @@ body {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
